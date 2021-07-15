@@ -1,0 +1,158 @@
+/**VARIAVEIS**/
+:root{
+    --dark-purple: #261932;
+    --purple: #A152EF;
+    --lilac: #D3CADD;
+    --gray:  #767676;
+    --light-gray: #E4E4E4;
+    --off-white: #F9F9F9;
+    --white: #FFFFFF;
+    --fade: linear-gradient(270deg, #69B99D 0%, rgba(204, 244, 230, 0.34) 100%);
+
+    font-size: 62.5%;
+}
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/*BASE*/
+body{
+    font: 400 1.6rem "DM Sans", sans-serif;
+    background: var(--off-white);
+    -webkit-font-smoothing: antialiased;
+}
+
+h2{
+    font: 700 3rem "Poppins", sans-serif;
+    color: var(--dark-purple);
+    -webkit-font-smoothing: auto;
+}
+
+.button{
+    background-color: var(--purple);
+    color: var(--off-white);
+    height: 5.6rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 3.2rem;
+    border-radius: .5rem;
+    font: 500 1.6rem "DM Sans", sans-serif;
+    transition: background 0.2s;
+}
+
+.button:hover{
+    background: var(--lilac);
+}
+
+.divider-1{
+    height: .2rem;
+    background: var(--fade);
+}
+
+/*LAYOUT*/
+.container{
+    width: 100%;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+}
+
+.grid{
+    display: grid;
+    gap: 3.2rem;
+}
+
+header{
+    border-bottom: solid .1rem var(--light-gray);
+    display: flex;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--white);
+}
+
+nav{
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font: 700 2.5rem "Poppins", sans-serif;
+    color: var(--dark-purple);
+}
+
+.logo span{
+    color: var(--purple);
+}
+
+main{
+    margin-top: 7.2rem;
+}
+
+section{
+    padding: 8rem 0;
+}
+
+#home{
+    overflow: hidden;
+}
+
+#home .container{
+    margin: 0;
+}
+
+#home .image::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--lilac);
+    position: absolute;
+    top: -13.8%;
+    left: 16.7%;
+    z-index: 0;
+}
+
+#home .image{
+    position: relative;
+}
+
+#home .image img{
+    position: relative;
+    right: 4.7rem;
+}
+
+#home .image img, #home .image::before{
+    border-radius: .5rem;
+}
+
+#home .text{
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    text-align: center;
+    color: var(--gray);
+}
+
+#home .text h2{
+    margin-bottom: 1.6rem;
+}
+
+#home .text p{
+    margin-bottom: 3.2rem;
+    max-width: 100%;
+}
