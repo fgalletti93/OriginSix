@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,13 +99,91 @@
         <div class="divider-1"></div>
 
         <section id="testimonials">
-            <div class="container grid">Depoimentos</div>
+            <div class="container">
+                <h2>Depoimentos de quem já passou por aqui</h2>
+                <div class="testimonials swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam delectus exercitationem maiores debitis commodi et rerum dolorum dolores sed eaque officiis illo labore, cumque maxime reprehenderit adipisci voluptates quia porro.
+                                </p>
+                                <cite>
+                                    <img src="https://randomuser.me/api/portraits/women/88.jpg" alt="foto de Wanessa">
+                                    Wanessa Souza
+                                </cite>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam delectus exercitationem maiores debitis commodi et rerum dolorum dolores sed eaque officiis illo labore, cumque maxime reprehenderit adipisci voluptates quia porro.
+                                </p>
+                                <cite>
+                                    <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="Foto de Douglas">
+                                    Douglas Franco
+                                </cite>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam delectus exercitationem maiores debitis commodi et rerum dolorum dolores sed eaque officiis illo labore, cumque maxime reprehenderit adipisci voluptates quia porro.
+                                </p>
+                                <cite>
+                                    <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="foto de Mayk">
+                                    Mayk Brito
+                                </cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </section>
+
+        <div class="divider-2"></div>
+
         <section id="contact">
-            <div class="container grid">Contato</div>
+            <div class="container grid">
+                <div class="text">
+                    <h2>Entre em contato com a gente!</h2>
+                    <p>Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
+                    <a href="https://api.whatsapp.com/send?phone=+551198650033&text=SuaMensagem" class="button" target="_blank">
+                        <img src="assets/whatsapp-white.svg" alt="">
+                        Entrar em contato
+                    </a>
+                </div>
+                <div class="contact-links">
+                    <ul class="grid">
+                        <li>
+                            <img src="assets/phone.svg" alt="">
+                            11 99865-0033
+                        </li>
+                        <li>
+                            <img src="assets/map-pin.svg" alt="">
+                            R. Amauri Souza, 346
+                        </li>
+                        <li>
+                            <img src="assets/mail.svg" alt="">
+                            contact@beautysalon.com
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </section>
     </main>
+
     <footer></footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="srcipts.js"></script>
     
