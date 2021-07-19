@@ -148,11 +148,12 @@ nav ul li a{
     position: relative;
 }
 
-nav ul li a:hover{
+nav ul li a:hover,
+nav ul li a.active {
     color: var(--purple);
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0%;
     height: .1rem;
@@ -164,7 +165,8 @@ nav ul li a::after{
     transition: width 0.2s;
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after,
+nav ul li a.active::after{
     width: 100%;
 }
 
@@ -445,6 +447,10 @@ footer{
     background: var(--lilac);
 }
 
+footer.section{
+    padding: 6rem 0;
+}
+
 footer .brand a{
     display: block;
     margin-bottom: 2.4rem;
@@ -497,11 +503,109 @@ footer .social a:hover{
 }
 
 /******************RESPONSIVIDADE******************/
-@media (min-width: 1023px) {
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section{
+        padding: 16rem 0;
+    }
+    .button{
+        height: 4.5rem;
+    }
+    .header{
+        max-width: 52rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav .menu {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+    nav .menu ul{
+        display: flex;
+        gap: 3.2rem;
+        
+    }
+    nav .menu ul li a{
+        font: 700 1.6rem 'DM Sans', sans-serif;
+    }
+    nav .menu ul li a:hover{
+        font-weight: bold;
+    }
+    nav a img {
+        display: none;
+    }
+    #home .container{
+        grid-auto-flow: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    #home .image{
+        order: 1;
+    }
+    #home .text{
+        order: 0;
+        max-width: 39.6rem;
+        text-align: left;
+    }
+    #about .container{
+        grid-auto-flow: column;
+        margin: 0 auto;
+    }
+   footer.section{
+       padding: 3rem 0;
+   }
+   footer .container{
+       grid-auto-flow: column;
+       align-items: center;
+       justify-content: space-between;
+   }
 
+}
+
+@media (min-width: 1023px){
+    main{
+        margin-top: 12rem;
+    }
+    .section{
+        padding: 16rem 0;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card{
+        padding-left: 4.8rem;
+        padding-right: 4.8rem;
+    }
+    #contact .container{
+        grid-auto-flow: column;
+        align-items: center;
+    }
+    #contact .text{
+        max-width: 40rem;
+    }
 }
 
 /*large devices 992 > */
 @media (min-width: 992px) {
-    
+    h2{
+        font-size: 3.6rem;
+    }
+    h3{
+        font-size: 2.4rem;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    #services p{
+        font-size: 1.6rem;
+    }
+    .testimonial p{
+        font-size: 1.6rem;
+    }
 }
