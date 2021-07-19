@@ -504,13 +504,13 @@ footer .social a:hover{
 
 /******************RESPONSIVIDADE******************/
 @media (min-width: 1200px) {
+    section{
+        padding: 16rem 0;
+    }
     .container{
         max-width: 1120px;
         margin-left: auto;
         margin-right: auto;
-    }
-    section{
-        padding: 16rem 0;
     }
     .button{
         height: 4.5rem;
@@ -546,6 +546,11 @@ footer .social a:hover{
 @media (min-width: 1023px){
     main{
         margin-top: 12rem;
+    }
+    .container{
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .section{
         padding: 16rem 0;
