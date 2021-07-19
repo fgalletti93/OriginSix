@@ -99,6 +99,11 @@ section{
     padding: 8rem 0;
 }
 
+.section{
+    padding: 8rem 0;
+
+}
+
 
 /*********************HEADER & NAEGADOR**********************/
 header{
@@ -433,4 +438,70 @@ nav.show .close{
 #contact ul li {
     display: flex;
     align-items: center;
+}
+
+/**********HEADER************/
+footer{
+    background: var(--lilac);
+}
+
+footer .brand a{
+    display: block;
+    margin-bottom: 2.4rem;
+    width: 14.4rem;
+}
+
+footer .brand p{
+    color: var(--off-white);
+    text-align: justify;
+    margin-bottom: 1.2rem;
+}
+
+footer .container{
+    width: 100%;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
+footer .social{
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+
+footer .social a:hover{
+    transform: translateY(-8px);
+}
+
+/*********ARROW UP********/
+.arrow-up{
+    background: var(--lilac);
+    width: 3.5rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: .4rem;
+    clip-path: circle();
+    line-height: 0;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(100%);
+}
+
+.arrow-up.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/******************RESPONSIVIDADE******************/
+@media (min-width: 1023px) {
+
+}
+
+/*large devices 992 > */
+@media (min-width: 992px) {
+    
 }

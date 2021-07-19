@@ -58,7 +58,18 @@ scrollReveal.reveal(
     #about .image, #about .text, 
     #services .header, #services .card,
     #testimonials h2, #testimonials .testimonials, 
-    #contact .text, #contact .contact-links`,
+    #contact .text, #contact .contact-links,
+    footer .brand, footer .social
+    `,
      { interval: 100 }
 )
 
+//BACK TO TOP BUTTON//
+const arrowUpButton = document.querySelector('.arrow-up')
+window.addEventListener('scroll', function() {
+    if(window.scrollY >= 460) {
+        arrowUpButton.classList.add('show')
+    } else {
+        arrowUpButton.classList.remove('show')
+    }
+})
